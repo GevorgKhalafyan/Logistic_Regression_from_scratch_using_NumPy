@@ -26,12 +26,11 @@ where $\lambda$ is the $L2$ regularization parameter.
 
 ## Visualization and experiment results
 
-To show the performance of our model, we will take a simple system of three classes and try to separate its elements correctly. So, for this case, the parameter values are  $N = 500$, $M = 2$ and $T = 3$. Let's look at the data and how our model will split it:
+To show the performance of our model, we will take a simple system of three classes and try to separate its elements correctly. So, for this case, the parameter values are  $N = 500$, $M = 2$ and $T = 3$. Let's look how out model performs on the data:
 
 <p align="center">
- <img alt="Light" src="./image1.jpg" width="45%">
+ <img alt="Light" src="./images/data.png" width="45%">
 &nbsp; &nbsp; &nbsp; &nbsp;
- <img alt="Light" src="./image2.jpg" width="45%">
+ <img alt="Light" src="./images/data_splitted.png" width="45%">
 </p>
-
-Note that, in the right picture, the colors of the classes is shifted. Also note that when dividing the data into train and test, respectively, 80% and 20%, training the model on the train and making predictions on the test, we get an accuracy score of ~ 94%, which is consistent with the result of the official sklearn logistic regression model.
+Here on the left is the datapoints, colors indicates classes. On the right we have shown te decision boundaries of our model. Also note that we have divided the data into train and test sets with proportion 80% and 20%. The model is fitted on the train set and the predictions on the test set have  accuracy score of ~ 94%. This is consistent with the result of the official sklearn logistic regression model.
